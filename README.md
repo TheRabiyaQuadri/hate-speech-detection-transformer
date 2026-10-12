@@ -23,12 +23,13 @@ The system integrates **BERT, RoBERTa, and RemBERT** transformer architectures t
 ## 🛠️ Project Architecture & Structure
 
 ```text
-├── audio_inputs/
+├── assets/
 │   └── sample_speech.wav
 │       # Input audio samples (.wav / .mp3)
 │
-├── notebooks/
-│   └── hate_speech_detection.ipynb
+├── BERT_REMBERT.ipynb
+├── BERT_ROBERTA.ipynb
+├── Hate_Speech_Detection.py
 │       # Complete training and inference pipeline
 │
 ├── outputs/
@@ -134,11 +135,11 @@ The following table presents the reported validation accuracy values for the two
 
 ### 1. Training and Validation History
 
-**File:** `outputs/training_history.png`
+**File:** `assets/training_history.png`
 
 This visualization displays the evolution of training and validation accuracy across epochs. It can help assess convergence, identify potential overfitting, and compare model learning behavior.
 
-![Training and Validation Accuracy](outputs/training_history.png)
+![Training and Validation Accuracy](assets/training_history.png)
 
 ### 2. Live Inference and Toxicity Classification
 
@@ -212,10 +213,10 @@ Ensure that the requirements file includes the libraries used by the notebook, s
 
 **3. Prepare the input audio**
 
-Place your audio files inside the `audio_inputs/` directory.
+Place your audio files inside the `assets/` directory.
 
 ```text
-audio_inputs/
+assets/
 └── sample_speech.wav
 ```
 
