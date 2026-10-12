@@ -20,6 +20,12 @@ The system integrates **BERT, RoBERTa, and RemBERT** transformer architectures t
 
 ---
 
+### 📊 Dataset Information
+The model training and benchmarking pipeline utilizes the **Jigsaw Toxic Comment Classification Challenge** dataset hosted on Kaggle:
+* **Kaggle Link:** [Jigsaw Toxic Comment Classification Challenge](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge)
+* **Dataset Scope:** Multi-label classification dataset containing Wikipedia comments labeled across 6 toxic categories: `toxic`, `severe_toxic`, `obscene`, `threat`, `insult`, and `identity_hate`.
+* **Setup Instructions:** Download `train.csv` from Kaggle and place it inside the `data/` folder before launching model training.
+
 ## 🛠️ Project Architecture & Structure
 
 ```text
