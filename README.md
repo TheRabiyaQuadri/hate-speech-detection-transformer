@@ -82,7 +82,7 @@ The classification output can include categories such as:
 
 - No Toxicity
 - Obscene
-- Severe Toxic
+- Severe Toxic & etc
 
 The actual labels depend on the dataset and the classification mapping implemented in the notebook.
 
@@ -127,8 +127,6 @@ The following table presents the reported validation accuracy values for the two
 - **Comparative evaluation:** Pipeline Model A provides a baseline for comparing the alternative transformer combination.
 - **Contextual language understanding:** Transformer models capture contextual information that can be useful for distinguishing harmful language from ordinary speech.
 - **Multilingual potential:** RemBERT is designed for multilingual language understanding, although actual performance depends on the languages represented in the training and evaluation datasets.
-
-*Note: These are the reported validation results. They should be verified against the actual notebook outputs. Accuracy alone does not establish high precision; class-wise precision, recall, F1-score, and a confusion matrix are recommended, particularly for imbalanced toxicity datasets.*
 
 ---
 
@@ -181,8 +179,6 @@ prediction_model("she is a pathetic")
 ```text
 Detected sentiment: Obscene
 ```
-
-*Note: These examples illustrate the intended classification behavior. Actual predictions depend on the trained model, its label mapping, and the input text. The final example should be checked against the dataset's annotation guidelines because the sentence may not necessarily qualify as obscene.*
 
 ---
 
@@ -254,8 +250,6 @@ Run the notebook cells sequentially to perform:
 - **Text-to-Speech (TTS)** — Generation of spoken output
 - **Audio Processing Libraries** — Audio loading, manipulation, and beep insertion
 - **Matplotlib** — Training and evaluation visualization
-
-The exact libraries and framework versions should be documented in `requirements.txt`.
 
 ---
 
