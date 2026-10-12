@@ -29,16 +29,13 @@ The model training and benchmarking pipeline utilizes the **Jigsaw Toxic Comment
 ## 🛠️ Project Architecture & Structure
 
 ```text
-├── assets/
-│   └── sample_speech.wav
-│       # Input audio samples (.wav / .mp3)
-│
+
 ├── BERT_REMBERT.ipynb
 ├── BERT_ROBERTA.ipynb
 ├── Hate_Speech_Detection.py
 │       # Complete training and inference pipeline
 │
-├── outputs/
+├── assets/
 │   └── training_history.png
 │       # Training and validation accuracy curves
 │
